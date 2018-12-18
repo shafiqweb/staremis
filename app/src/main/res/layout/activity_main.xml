@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2192d0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#472cf5"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <TextView
+        android:id="@+id/toolbar_title_text_viewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/star_academic_apps"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:src="@drawable/logo_star_soft"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/loginAsTextViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/institutionCodeEditTextID"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_shape"
+        android:gravity="start"
+        android:hint="@string/institution_code"
+        android:paddingTop="4dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:paddingEnd="0dp"
+        android:paddingStart="5dp"
+        android:textColorHint="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/spinnerID"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_shape"
+        android:dropDownVerticalOffset="38dp"
+        android:popupBackground="#2192d0"
+        android:paddingTop="3dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="5dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/userNameEditTextID"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_shape"
+        android:drawableStart="@drawable/user_icon"
+        android:drawablePadding="3dp"
+        android:gravity="start"
+        android:hint="@string/user_name"
+        android:paddingTop="4dp"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingEnd="0dp"
+        android:paddingStart="5dp"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/passwordEditTextID"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_shape"
+        android:drawableStart="@drawable/user_password_icon"
+        android:drawablePadding="3dp"
+        android:gravity="start"
+        android:hint="@string/password"
+        android:paddingTop="4dp"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:paddingEnd="0dp"
+        android:paddingStart="5dp"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/loginButtonID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:padding="2dp"
+        android:background="@drawable/border_with_background"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:textColor="#304dfa" />
+    <ImageView
+        android:src="@drawable/logo_star_soft"
+        android:contentDescription="@null"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:background="#00000000"
+        android:text="@string/powered_by_star_soft_ltd"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+         />
+
+</LinearLayout>

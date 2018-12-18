@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ResultActivity"
+    tools:showIn="@layout/app_bar_result">
+
+    <LinearLayout
+        android:id="@+id/examLauoutID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9ec4fc"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="3dp"
+            android:paddingStart="0dp"
+            android:text="Exam:"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Terminal"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subjectLauoutID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/examLauoutID"
+        android:background="#9ec4fc"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="3dp"
+            android:paddingStart="0dp"
+            android:text="Subject:"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:text="English"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paper:"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd paper"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewID"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/subjectLauoutID"
+        android:background="#0622f2" />
+
+    <LinearLayout
+        android:id="@+id/selectPartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewID"
+        android:background="#faf8f8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:text="Select part:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerID"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:dropDownVerticalOffset="38dp"
+            android:spinnerMode="dropdown"
+            android:textAllCaps="false"
+            android:theme="@style/MatchSpinnerTheme" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_below="@id/selectPartLayout"
+        android:id="@+id/viewPartID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</RelativeLayout>
